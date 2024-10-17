@@ -1,0 +1,957 @@
+@import url("https://fonts.googleapis.com/css2?family=Micro+5&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Minecrafter;
+  src: url(../fonts/Minecrafter.Reg.ttf);
+}
+body {
+  width: 100%;
+  .header {
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(31, 144, 13, 1);
+    .header__info {
+      width: 100%;
+      max-width: 1440px;
+      padding: 35px 60px 68px 60px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header__info__nav {
+        width: 100%;
+        max-width: 358px;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+              font-family: "Noto Sans", sans-serif;
+              font-size: 19.99px;
+              font-weight: 400;
+              line-height: 27.23px;
+              text-align: center;
+              color: rgba(255, 255, 255, 1);
+              cursor: pointer;
+              transition: 0.6s;
+              &:hover {
+                border-bottom: 1px solid rgba(255, 255, 255, 1);
+              }
+            }
+          }
+        }
+      }
+      .header__info__btn {
+        border: 2px solid #061903;
+        width: 180px;
+        height: 60px;
+        box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.25);
+        background: #ff9b26;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 136%;
+        text-align: center;
+        color: #fff;
+        font-family: "Noto Sans", sans-serif;
+        cursor: pointer;
+      }
+    }
+    .header__main {
+      width: 100%;
+      max-width: 1440px;
+      padding: 0px 60px 81px 60px;
+      margin-left: auto;
+      margin-right: auto;
+      .header__main__h1 {
+        font-family: Minecrafter;
+        font-weight: 400;
+        font-size: 159px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+      }
+      .header__main__p {
+        width: 100%;
+        max-width: 626px;
+        font-family: Minecrafter;
+        font-size: 31.98px;
+        font-weight: 400;
+        line-height: 31.96px;
+        text-align: center;
+        color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 52px;
+      }
+      .header__main__btn {
+        width: 100%;
+        max-width: 343px;
+        margin-left: auto;
+        margin-right: auto;
+        .button {
+          background-color: #ffa500;
+          border-radius: 2px;
+          padding: 20px 40px;
+          position: relative;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          .play-icon {
+            background-color: #d4ff4f;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            .triangle {
+              width: 0;
+              height: 0;
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-bottom: 20px solid #800080;
+              transform: rotate(90deg);
+            }
+          }
+          .button-text {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 39.98px;
+            font-weight: 700;
+            line-height: 54.41px;
+            text-align: center;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .main {
+    width: 100%;
+    background-color: rgb(255, 251, 221);
+    .section__playnow {
+      width: 100%;
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 27px 44px 49px 44px;
+      .section__playnow__div {
+        border-radius: 166px;
+        padding: 22px 32px;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
+        background: #3dae2b;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 110px;
+        span {
+          font-family: "Micro 5", sans-serif;
+          font-size: 63.97px;
+          font-weight: 400;
+          line-height: 63.97px;
+          text-align: center;
+          text-transform: uppercase;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+      .section__playnow__title {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 64px;
+        h3 {
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          max-width: 733px;
+          font-family: Minecrafter;
+          font-size: 64px;
+          font-weight: 400;
+          line-height: 64px;
+          text-align: center;
+          color: rgba(0, 0, 0, 1);
+          img {
+            transform: translate(-15px, 20px);
+          }
+        }
+      }
+      .section__playnow__table {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 20px;
+        .table1 {
+          width: 100%;
+          max-width: 600px;
+          padding: 514px 24px 24px 24px;
+          border-radius: 55px;
+          background-image: url(../img/image-1.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          button {
+            width: 100%;
+            max-width: 598px;
+            border-radius: 166px;
+            padding: 22px 7px;
+            box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.4);
+            background: #fffbdd;
+            font-weight: 800;
+            font-size: 23px;
+            letter-spacing: 0em;
+            color: #000;
+            border: none;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            transition: 0.5s;
+            svg {
+              display: none;
+            }
+            &:focus {
+              svg {
+                display: block;
+              }
+              background-color: rgba(61, 174, 43, 1);
+            }
+          }
+        }
+        .table2 {
+          width: 100%;
+          max-width: 600px;
+          padding: 514px 24px 24px 24px;
+          border-radius: 55px;
+          background-image: url(../img/image-2.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          button {
+            width: 100%;
+            max-width: 598px;
+            border-radius: 166px;
+            padding: 22px 7px;
+            box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.4);
+            background: #fffbdd;
+            font-weight: 800;
+            font-size: 23px;
+            letter-spacing: 0em;
+            color: #000;
+            border: none;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            transition: 0.5s;
+            svg {
+              display: none;
+            }
+            &:focus {
+              svg {
+                display: block;
+              }
+              background-color: rgba(61, 174, 43, 1);
+            }
+          }
+        }
+        .table3 {
+          width: 100%;
+          max-width: 600px;
+          padding: 514px 24px 24px 24px;
+          border-radius: 55px;
+          background-image: url(../img/image-3.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          button {
+            width: 100%;
+            max-width: 598px;
+            border-radius: 166px;
+            padding: 22px 7px;
+            box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.4);
+            background: #fffbdd;
+            font-weight: 800;
+            font-size: 23px;
+            letter-spacing: 0em;
+            color: #000;
+            border: none;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            transition: 0.5s;
+            svg {
+              display: none;
+            }
+            &:focus {
+              svg {
+                display: block;
+              }
+              background-color: rgba(61, 174, 43, 1);
+            }
+          }
+        }
+        .table4 {
+          width: 100%;
+          max-width: 600px;
+          padding: 514px 24px 24px 24px;
+          border-radius: 55px;
+          background-image: url(../img/image-4.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          button {
+            width: 100%;
+            max-width: 598px;
+            border-radius: 166px;
+            padding: 22px 7px;
+            box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.4);
+            background: #fffbdd;
+            font-weight: 800;
+            font-size: 23px;
+            letter-spacing: 0em;
+            color: #000;
+            border: none;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            transition: 0.5s;
+            svg {
+              display: none;
+            }
+            &:focus {
+              svg {
+                display: block;
+              }
+              background-color: rgba(61, 174, 43, 1);
+            }
+          }
+        }
+      }
+    }
+    .section-slider {
+      width: 100%;
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      .slider-container {
+        width: 100%;
+        text-align: center;
+        h1 {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 64px;
+          width: 100%;
+          max-width: 806px;
+          font-family: Minecrafter;
+          font-size: 64px;
+          font-weight: 400;
+          line-height: 64px;
+          text-align: center;
+          color: rgba(0, 0, 0, 1);
+        }
+        .slider {
+          display: flex;
+          overflow: hidden;
+          position: relative;
+          .slider-item {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            &.active {
+              opacity: 1;
+              visibility: visible;
+            }
+            .card {
+              width: 100%;
+              max-width: 692px;
+              background-color: rgba(61, 174, 43, 1);
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+              text-align: center;
+              border-radius: 63px;
+              margin-left: auto;
+              margin-right: auto;
+              padding-bottom: 45px;
+              img {
+                display: block;
+                z-index: 111111;
+                // transform: translateY(-61px);
+                border-radius: 50%;
+              }
+              .card-child {
+                width: 100%;
+                max-width: 601px;
+                background-color: rgba(151, 0, 198, 1);
+                border-radius: 36px 43px 37px 42px;
+                padding: 54px 82px;
+                margin-left: auto;
+                margin-right: auto;
+
+                h3 {
+                  font-family: Minecrafter;
+                  font-size: 48.07px;
+                  font-weight: 400;
+                  line-height: 48.07px;
+                  text-align: center;
+                  margin-bottom: 16px;
+                  color: rgba(255, 255, 255, 1);
+                }
+                p {
+                  width: 100%;
+                  max-width: 437px;
+                  font-family: "Noto Sans", sans-serif;
+                  font-size: 20.03px;
+                  font-style: italic;
+                  font-weight: 500;
+                  line-height: 27.28px;
+                  text-align: center;
+                  color: rgba(255, 255, 255, 1);
+                }
+              }
+            }
+          }
+        }
+        .controls {
+          margin-top: 20px;
+          button {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            background-color: rgba(151, 0, 198, 1);
+            color: rgba(61, 174, 43, 1);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+            &:hover {
+              background-color: #4e45d4;
+            }
+          }
+        }
+      }
+    }
+    .section-versions {
+      width: 100%;
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 80px 60px 60px 60px;
+      h4 {
+        width: 100%;
+        max-width: 673px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Minecrafter;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 64px;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 81px;
+      }
+      .table1 {
+        width: 100%;
+        max-width: 1319px;
+        border-radius: 60px;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.1);
+        background-image: url(../img/table-1.bck.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 99px 40px 66px 40px;
+        margin-bottom: 34px;
+        h5 {
+          width: 100%;
+          max-width: 768px;
+          font-family: Minecrafter;
+          .update {
+            font-weight: 400;
+            font-size: 64px;
+            color: #b7aca8;
+          }
+          .tricky {
+            font-weight: 400;
+            font-size: 64px;
+            color: #ca6443;
+          }
+          .trails {
+            font-family: Minecrafter;
+            font-weight: 400;
+            font-size: 64px;
+            color: #4b9f85;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .table2 {
+        width: 100%;
+        max-width: 1319px;
+        border-radius: 60px;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.1);
+        background-image: url(../img/table-2.bck.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        padding: 13px 40px 184px 40px;
+        margin-bottom: 34px;
+        h5 {
+          width: 100%;
+          max-width: 614px;
+          text-align: center;
+          font-family: Minecrafter;
+          font-weight: 400;
+          font-size: 48px;
+          margin-left: auto;
+          margin-right: auto;
+          .update1 {
+            text-align: center;
+            color: #b2a7a4;
+          }
+          .raqam {
+            background: linear-gradient(
+              90deg,
+              #ca6657 0%,
+              #f5e85f 50%,
+              #b45d61 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .tales {
+            background: linear-gradient(
+              90deg,
+              #964f71 0%,
+              #b15d65 10%,
+              #cd6b58 30%,
+              #fff69b 51.96%,
+              #b15d65 70%,
+              #cd6b58 90%,
+              #964f71 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+      .table3 {
+        width: 100%;
+        max-width: 1319px;
+        border-radius: 60px;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.1);
+        background-image: url(../img/table-3.bck.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 99px 40px 66px 40px;
+        margin-bottom: 34px;
+        h5 {
+          width: 100%;
+          max-width: 598px;
+          font-family: Minecrafter;
+          font-weight: 400;
+          font-size: 64px;
+          color: #b7aca8;
+          .one {
+            color: #048d94;
+          }
+          .one-dot {
+            color: #5f9e56;
+          }
+        }
+      }
+      .table4 {
+        width: 100%;
+        max-width: 1319px;
+        border-radius: 60px;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.1);
+        background-image: url(../img/table-4.bck.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        padding: 157px 40px 40px 40px;
+        h5 {
+          width: 100%;
+          max-width: 430px;
+          margin-left: auto;
+          margin-right: auto;
+          font-family: Minecrafter;
+          font-weight: 400;
+          font-size: 48px;
+          text-align: center;
+          color: #b7aca8;
+          .one1 {
+            color: #d83fe1;
+          }
+          .blue {
+            color: #20c3c2;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    background: #3dae2b;
+    border-radius: 55px 55px 0px 0px;
+    .footer-info {
+      width: 100%;
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 60px 60px 50px 60px;
+      .download {
+        border-radius: 55px;
+        width: 100%;
+        max-width: 1320px;
+        padding: 169px 30px 146px 30px;
+        box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.1);
+        background-image: url(../img/image\ 38.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 88px;
+        h6 {
+          width: 100%;
+          max-width: 580px;
+          margin-left: auto;
+          margin-right: auto;
+          font-family: Minecrafter;
+          font-size: 96px;
+          font-weight: 400;
+          line-height: 96px;
+          text-align: center;
+          color: rgba(171, 170, 162, 1);
+        }
+      }
+      .footer__information {
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer__info__nav {
+          width: 100%;
+          max-width: 358px;
+          ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+              list-style: none;
+              a {
+                text-decoration: none;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 19.99px;
+                font-weight: 400;
+                line-height: 27.23px;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                cursor: pointer;
+                transition: 0.6s;
+                &:hover {
+                  border-bottom: 1px solid rgba(255, 255, 255, 1);
+                }
+              }
+            }
+          }
+        }
+        .footer__info__btn {
+          border: 2px solid #061903;
+          width: 180px;
+          height: 60px;
+          box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.25);
+          background: #ff9b26;
+          font-weight: 700;
+          font-size: 23px;
+          line-height: 136%;
+          text-align: center;
+          color: #fff;
+          font-family: "Noto Sans", sans-serif;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1308px) {
+  body {
+    .main {
+      .section__playnow {
+        .section__playnow__table {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 914px) {
+  body {
+    .header {
+      .header__info {
+        padding: 16px;
+        .header__info__nav {
+          ul {
+            display: none;
+          }
+        }
+        .header__info__btn {
+          width: 140px;
+        }
+      }
+      .header__main {
+        padding: 16px;
+        .header__main__h1 {
+          font-size: 59px;
+        }
+      }
+    }
+    .main {
+      .section__playnow {
+        padding: 16px;
+        .section__playnow__div {
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 50px;
+          width: 100%;
+          max-width: 500px;
+          flex-direction: column;
+        }
+        .section__playnow__title {
+          h3 {
+            font-size: 30px;
+            img {
+              display: none;
+            }
+          }
+        }
+        .section__playnow__table {
+          width: 100%;
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .section-slider {
+        .slider-container {
+          .controls {
+            .prev {
+              width: 50px;
+              height: 50px;
+            }
+            .next {
+              width: 50px;
+              height: 50px;
+            }
+          }
+          h1 {
+            font-size: 25px;
+            margin-bottom: 15px;
+          }
+          .slider {
+            .slider-item.active {
+              .card {
+                width: 100%;
+                max-width: 550px;
+                img {
+                  width: 100%;
+                  max-width: 300px;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin-bottom: 20px;
+                }
+                .card-child {
+                  width: 100%;
+                  max-width: 300px;
+                  padding: 16px;
+                  h3 {
+                    font-size: 19px;
+                  }
+                  p {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .section-versions {
+        padding: 16px;
+        h4 {
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+        .table1 {
+          padding: 190px 20px 50px 20px;
+          h5 {
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+        .table2 {
+          padding: 190px 20px 50px 20px;
+        }
+        .table3 {
+          padding: 190px 20px 50px 20px;
+        }
+        .table4 {
+          padding: 190px 20px 50px 20px;
+        }
+      }
+    }
+    .footer {
+      .footer-info {
+        padding: 16px;
+        .download {
+          padding: 50px 20px;
+          margin-bottom: 40px;
+          h6 {
+            font-size: 25px;
+          }
+        }
+        .footer__information {
+          .footer__info__nav {
+            ul {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    .main {
+      .section-versions {
+        padding: 16px;
+
+        .table1 {
+          padding: 20px 10px;
+          h5 {
+            font-size: 20px;
+            .update {
+              font-size: 20px;
+            }
+            .tricky {
+              font-size: 20px;
+            }
+            .trails {
+              font-size: 20px;
+            }
+          }
+        }
+        .table2 {
+          padding: 20px 10px;
+          h5 {
+            font-size: 20px;
+          }
+        }
+        .table3 {
+          padding: 20px 10px;
+          h5 {
+            font-size: 20px;
+          }
+        }
+        .table4 {
+          padding: 20px 10px;
+          h5 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .footer {
+      .footer-info {
+        padding: 16px;
+        .download {
+          padding: 50px 20px;
+          margin-bottom: 40px;
+          h6 {
+            font-size: 25px;
+          }
+        }
+        .footer__information {
+          .footer__info__nav {
+            ul {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  body {
+    .header {
+      .header__info {
+        .header__info__btn {
+          width: 100%;
+          max-width: 80px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    .main {
+      .section__playnow {
+        .section__playnow__table {
+          .table1 {
+            padding: 250px 15px 30px 15px;
+          }
+          .table2 {
+            padding: 250px 15px 30px 15px;
+          }
+          .table3 {
+            padding: 250px 15px 30px 15px;
+          }
+          .table4 {
+            padding: 250px 15px 30px 15px;
+          }
+        }
+      }
+    }
+    .footer {
+      .footer-info {
+        .footer__information {
+          .footer__info__btn {
+            width: 100%;
+            max-width: 80px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
